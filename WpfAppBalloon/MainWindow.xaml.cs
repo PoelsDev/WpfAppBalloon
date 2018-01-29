@@ -50,5 +50,15 @@ namespace WpfAppBalloon
         {
             balloon1.ChangeColor();
         }
+
+        private void mijnKnop5_Click(object sender, RoutedEventArgs e)
+        {
+            mijnTekstbox.Text = Convert.ToString(balloon1.XCoord);
+        }
+
+        private void mijnKnop6_Click(object sender, RoutedEventArgs e)
+        {
+            balloon1.ChangeXCoord = Convert.ToInt32(mijnTekstbox.Text);
+        }
     }
 }

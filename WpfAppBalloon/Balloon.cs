@@ -63,6 +63,23 @@ namespace WpfAppBalloon
             drawingArea.Children.Add(ellipse);
         }
 
+        public int XCoord
+        {
+            get
+            {
+                return x;
+            }
+        }
+
+        public int ChangeXCoord
+        {
+            set
+            {
+                x = value;
+                UpdateEllipse();
+            }
+        }
+
         private void CreateEllipse()
         {
             ellipse = new Ellipse();            
