@@ -43,8 +43,7 @@ namespace WpfAppBalloon
         {
             Random rndGen = new Random();
             ellipse.Stroke = new SolidColorBrush(Color.FromRgb((byte) rndGen.Next(0,255), (byte)rndGen.Next(0,255), (byte)rndGen.Next(0,255)));
-            ellipse.Fill = new SolidColorBrush(Color.FromRgb((byte)rndGen.Next(0, 255), (byte)rndGen.Next(0, 255), (byte)rndGen.Next(0, 255)));
-            UpdateEllipse();
+            ellipse.Fill = new SolidColorBrush(Color.FromRgb((byte)rndGen.Next(0, 255), (byte)rndGen.Next(0, 255), (byte)rndGen.Next(0, 255)));            
         }
 
         public void ChangeColor(Brush brush)
